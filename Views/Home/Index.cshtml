@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string[] tableColumnHeader = new string[] {"Address Id", "Address","City","Province Id","Postal Code" };
+}
+
+<button class="btn btn-primary" id="btnfillTable">Fill Table</button>
+<div class="table">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                @{
+                    foreach(string columnHead in tableColumnHeader)
+                    {
+                        <th>@columnHead</th>
+                    }
+                 }
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
